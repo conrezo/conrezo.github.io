@@ -1,69 +1,11 @@
-.container {
-    height: 100vh;
-    font-family: sans-serif;
-    section {
-        height: 100vh;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        color: white;
-
-    }
-    .one {
-        background: linear-gradient(-45deg, #06028d, #006159, #06028d, #006159);
-        background-size: 400% 400%;
-        animation: gradient 15s ease infinite;
-        height: 100vh;
-        @keyframes gradient {
-            0% {
-                background-position: 0% 50%;
-            }
-            50% {
-                background-position: 100% 50%;
-            }
-            100% {
-                background-position: 0% 50%;
-            }
-        }
-    }
-    .two {
-        background: green;
-    }
-    .three {
-        background: blue;
-    }
-}
-.scroll {
-    scroll-snap-type: y mandatory;
-    overflow-y: auto;
-    section {
-        scroll-snap-align: start;
-    }
-}
-
-
-
-
-
 .wrapper {
     height: 100vh;
+    width: 100vw;
     overflow-y: auto;
     overflow-x: hidden;
     perspective: 100px;
+    font-family: sans-serif;
 }
-
-
-.title {
-    font-size: 7rem;
-    color: white;
-    text-shadow: 0 0 5px black;;
-}
-
-
-
-
-
-
 
 @keyframes moveInCircle {
     0% {
@@ -101,6 +43,17 @@
     }
 }
 
+.black-gradient-bg {
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    display: block;
+    position: absolute;
+    overflow: hidden;
+    z-index: 50;
+    background: linear-gradient(to top, transparent 40%, black 90%);
+}
 .gradient-bg {
     width: 100vw;
     height: 100vh;
@@ -215,17 +168,18 @@
     }
 }
 
-.text-container {
+.logo-container {
     z-index: 100;
     width: 100vw;
-    height: 100vh;
+    height: 100px;
     display: flex;
     position: absolute;
     top: 0;
-    left: 0;
-    justify-content: center;
+    left: 32px;
+    right: 32px;
+    justify-content: flex-start;
     align-items: center;
-    font-size: 96px;
+    font-size: 32px;
     color: white;
     opacity: 0.8;
     user-select: none;
