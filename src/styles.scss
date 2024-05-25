@@ -9,9 +9,63 @@
     --color-interactive: 140, 100, 255;
     --circle-size: 80%;
     --blending: hard-light;
+
+    --theme-color: rgb(36, 226, 64); //rgb(0, 170, 255);
+    --theme-color-hover: rgb(35, 219, 63);
 }
 
 body {
     margin: 0;
     padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+.caveat-font {
+    font-family: "Caveat", cursive;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.libre-baskerville-regular {
+    font-family: "Libre Baskerville", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .libre-baskerville-bold {
+    font-family: "Libre Baskerville", serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  .libre-baskerville-regular-italic {
+    font-family: "Libre Baskerville", serif;
+    font-weight: 400;
+    font-style: italic;
+  }
+
+  .archivo-black-regular {
+    font-family: "Archivo Black", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  .jetbrains-mono-extrabold {
+    font-family: "JetBrains Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+  }
+
+.font-very-big {
+    font-size: 8rem;
+}
+
+.font-big {
+    font-size: 2rem;
+}
+
+.color-grey {
+    color: #c2c2c2;
 }

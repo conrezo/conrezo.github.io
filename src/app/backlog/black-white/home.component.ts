@@ -1,5 +1,9 @@
 import { Component, HostListener } from '@angular/core';
 
+// declare function resize():any;
+// declare function addListeners():any;
+// declare function loop():any;
+
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
@@ -16,27 +20,20 @@ export class HomeComponent {
   }
 
   ngOnInit(): void {
-    const hello = document.getElementById('hello');
-    // if(hello) {
-    //   setTimeout(function(){
-    //     hello.style.marginBottom = "3rem";
-    //     hello.style.display = "inline-block";
-    //   }, 2000)
-    // }
-    window.onload = function() {
-      const hello = document.getElementById('hello');
-      if(hello) hello.classList.add('img-slide-in');
-    };
-
+    // resize();
+    // addListeners();
+    // loop();
   }
 
-  changeWidth(){
+  changeWidth() {
     var scroll = (window.pageYOffset);
+    console.warn(scroll);
     var width = "";
-    if(scroll<101) width = 80 + scroll/10 + "%";
-    else width = "90%";
+    if (scroll == 0) width = "90%";
+    else if (scroll == 100) width = "95%";
+    else if (scroll == 200) width = "98%";
+    else width = "100%";
     const element = document.getElementById('expand');
     if(element) element.style.width = width;
   }
-
 }
