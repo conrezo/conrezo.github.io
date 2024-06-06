@@ -36,10 +36,22 @@
     justify-content: center;
     flex-direction: column;
     align-items:center;
-    img {
-        margin-bottom: 3rem;
-        z-index: 9;
-        width: 40%;
+    .hello-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        img {
+            margin-bottom: 3rem;
+            z-index: 9;
+            width: 40%;
+        }
+        .introduction {
+            font-size: 1.5rem;
+        }
+        .contact-me {
+            margin: 2rem 0;
+        }
     }
     .img-slide-in {
         //animation: slideInFromBottom 1s cubic-bezier(.17,.67,.67,.85);
