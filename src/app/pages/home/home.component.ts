@@ -39,4 +39,8 @@ export class HomeComponent {
     if(element) element.style.width = width;
   }
 
+  scroll(el: HTMLElement) {
+    el.scrollIntoView({behavior: 'smooth'});
+  }
+  
 }

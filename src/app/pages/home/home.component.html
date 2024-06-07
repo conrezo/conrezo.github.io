@@ -1,4 +1,4 @@
-<div class="top-bar">
+<!-- <div class="top-bar">
     <div class="logo">
         Konrad Prusak
     </div>
@@ -6,24 +6,31 @@
         <div>Projects</div>
         <div>Contact</div>
     </div>
-</div>
+</div> -->
 
 <div class="gradient-container">
     <div class="hello-container" id="hello">
-        <img src="assets/hello-black.svg" alt="hello">
-        <div class="introduction">I'm an UI/UX Developer</div>
-        <button class="contact-me">Contact me</button> 
+        <div class="hello">
+            <img src="assets/hello-white.svg" alt="hello">
+        </div>
+        
+        <div class="avatar">
+            <img src="assets/avatar.png" alt="picture photo">
+        </div>
+        <div class="name">I'm Konrad Prusak</div>
+        <div class="position">UI / UX Engineer</div>
+        <button class="contact-me" (click)="scroll(contact)">Contact me</button> 
     </div>
 </div>
 
 <div class="projects-container">
     <div class="container" id="expand">
-        
+        <div class="font-big">Projects</div>
     </div>
 </div>
 
-<div class="contact-container">
+<div class="contact-container" #contact>
     <div class="container">
-        
+        <div class="font-big">Contact me</div>
     </div>
 </div>
