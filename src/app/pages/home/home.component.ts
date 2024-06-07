@@ -25,7 +25,9 @@ export class HomeComponent {
     // }
     window.onload = function() {
       const hello = document.getElementById('hello');
-      if(hello) hello.classList.add('img-slide-in');
+      if(hello) hello.classList.add('slide-in');
+      const arrow = document.getElementById('arrow');
+      if(arrow) arrow.classList.add('slide-in-delay');
     };
 
   }
